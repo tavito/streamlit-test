@@ -48,7 +48,7 @@ def cmd_all_npm_build(args):
     """Build javascript code for all examples and templates"""
     for project_dir in EXAMPLE_DIRECTORIES + TEMPLATE_DIRECTORIES:
         frontend_dir = next(project_dir.glob("*/frontend/"))
-        run_verbose(["npm", "run", "build"], cwd=str(frontend_dir))
+        run_verbose(["CI=false ", "npm", "run", "build"], cwd=str(frontend_dir))
 
 
 def cmd_e2e_build_images(args):
