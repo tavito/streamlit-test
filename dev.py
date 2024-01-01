@@ -18,10 +18,11 @@ import shutil
 import os
 
 THIS_DIRECTORY = Path(__file__).parent.absolute()
-EXAMPLE_DIRECTORIES = [d for d in (THIS_DIRECTORY / 'examples').iterdir() if d.is_dir()]
+# EXAMPLE_DIRECTORIES = [d for d in (THIS_DIRECTORY / 'examples').iterdir() if d.is_dir()]
+EXAMPLE_DIRECTORIES = []
 TEMPLATE_DIRECTORIES = [
     THIS_DIRECTORY / "template",
-    THIS_DIRECTORY / "template-reactless",
+    # THIS_DIRECTORY / "template-reactless",
 ]
 
 
